@@ -1,0 +1,5 @@
+site_name: SWAT+ Github Documentation
+theme:
+  name: material
+nav:
+  - Home: index.md
