@@ -1,5 +1,8 @@
 # Welcome to SWAT+ Github Documentation
 
+**IMPORTANT**:
+If you are looking for documentation on the SWAT+ model, pleas visit [https://swatplus.gitbook.io/docs/user/io](https://swatplus.gitbook.io/docs/user/io). This documentation is for users of the repositories in the SWAT-Research Group
+
 ## About our GitHub Account
 
 The SWAT-Model Research Group has created a GitHub account to promote the reproducibility and transparency of our data analysis and research outcomes. Additionally, it provides an open-source avenue for hosting code developed within our group.
