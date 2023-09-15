@@ -1,3 +1,7 @@
+<!-- ---
+icon: material/emoticon-happy 
+--- -->
+
 # Welcome to SWAT+ Github Documentation
 
 **IMPORTANT**:

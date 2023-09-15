@@ -24,22 +24,17 @@ Here is how to get code to GitHub using GitHub Desktop:
 1. **Setup**
    - Download and install [GitHub Desktop](https://desktop.github.com/).
    - Log in with your GitHub account.
-
 2. **Clone a Repository**
    - Click on `File` > `Clone Repository` from the main menu.
    - Select a repository from the list or enter a repository URL.
-
 3. **Make Changes**
    - Edit files in your preferred text editor.
-   
 4. **Commit Changes**
    - Return to GitHub Desktop. It will show changed files.
    - Enter a commit message and description.
    - Click `Commit to master` (or your current branch).
-
 5. **Push Changes**
    - Click the `Push Origin` button at the top.
-
 6. **Syncing**
    - To pull changes from GitHub, click the `Fetch origin` button.
 
@@ -52,22 +47,17 @@ This is moderately easy. Here is how to get code to GitHub using Visual Studio C
 1. **Setup**
    - Install [Visual Studio Code](https://code.visualstudio.com/).
    - Install the [Git extension](https://marketplace.visualstudio.com/items?itemName=vscode.git) if it isn't already.
-
 2. **Clone a Repository**
    - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac).
    - Type `Git: Clone` and paste the repository URL.
-
 3. **Make Changes**
    - Edit files directly within VS Code.
-
 4. **Commit Changes**
    - Click on the source control icon on the sidebar.
    - Enter a commit message.
    - Press the checkmark at the top.
-
 5. **Push Changes**
    - Click on the ellipsis (`...`) > `Push`.
-
 6. **Syncing**
    - Click the sync icon at the bottom left to fetch and integrate changes.
 
@@ -81,20 +71,15 @@ Here is how to get code to GitHub using Git CLI:
 
 1. **Setup**
    - Install [Git](https://git-scm.com/downloads).
-   
 2. **Clone a Repository**
    - `git clone [repository-url]`.
-
 3. **Make Changes**
    - Use your preferred text editor to make changes.
-
 4. **Commit Changes**
    - `git add .`
    - `git commit -m "Your commit message here"`.
-
 5. **Push Changes**
    - `git push origin master` (or your current branch).
-
 6. **Syncing**
    - `git pull` to pull changes from GitHub.
 
@@ -105,20 +90,15 @@ Here is how to get code to GitHub using GitHub CLI:
 1. **Setup**
    - Install [GitHub CLI](https://cli.github.com/).
    - Authenticate using `gh auth login`.
-
 2. **Clone a Repository**
    - `gh repo clone [repository-url or owner/repo]`.
-
 3. **Make Changes**
    - Edit files with your preferred text editor.
-
 4. **Commit Changes**
    - `git add .`
    - `git commit -m "Commit message"`.
-
 5. **Push Changes**
    - `git push origin master` (or your current branch).
-
 6. **Open Pull Requests, Issues, etc.**
    - Use various `gh` commands like `gh pr create` or `gh issue create`.
 
