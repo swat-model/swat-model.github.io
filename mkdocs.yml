@@ -2,6 +2,8 @@ site_name: SWAT+ Github Documentation
 nav:
   - Home: index.md
   - Setting Up: setup.md
+  - Collaborating: collaborating.md
+  - Managing a Repo: managing.md
 theme:
   name: material
   features:
@@ -31,3 +33,4 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+  
