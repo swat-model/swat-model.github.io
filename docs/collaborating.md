@@ -1,4 +1,4 @@
-# Collaborating Within a the SWAT-Github Organization
+# Collaborating Within the SWAT-Github Organization
 
 ---
 
