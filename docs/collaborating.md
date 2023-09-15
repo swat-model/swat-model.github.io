@@ -280,7 +280,7 @@ If you feel like being a nerd (we know you do), then this is for you.
 
 
 
-# Why Not Commit Directly to the Main Branch?
+## Why Not Commit Directly to the Main Branch?
 
 While it's technically possible to clone a repository and commit directly to the main branch (if you have the necessary permissions), this approach is generally discouraged for the following reasons:
 
