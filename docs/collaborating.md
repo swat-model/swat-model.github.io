@@ -286,37 +286,30 @@ While it's technically possible to clone a repository and commit directly to the
 
 **1. Code Quality and Review**
 
-- **Why**: Ensuring high code quality, adherence to coding standards, and catching potential bugs or security vulnerabilities.
-- **How**: Working on a feature branch and submitting a pull request provides an opportunity for team members to review and comment on your code.
+- Ensuring high code quality, adherence to coding standards, and catching potential bugs or security vulnerabilities. Working on a feature branch and submitting a pull request provides an opportunity for team members to review and comment on your code.
 
 **2. Isolation of Features or Bugs**
 
-- **Why**: Isolating the development work for specific features or bug fixes. 
-- **How**: If a feature branch introduces bugs, it won't affect the main codebase, allowing developers time to fix issues before merging.
+- Isolating the development work for specific features or bug fixes. If a feature branch introduces bugs, it won't affect the main codebase, allowing developers time to fix issues before merging.
 
 **3. Concurrent Development**
 
-- **Why**: Multiple team members can work on different features or bug fixes simultaneously without interference.
-- **How**: Each developer works in their own branch, which can later be merged into the main branch after review.
+- Multiple team members can work on different features or bug fixes simultaneously without interference. Each developer works in their own branch, which can later be merged into the main branch after review.
 
 **4. Rollback and History Clarity**
 
-- **Why**: Easier to roll back features or changes when they are isolated in their own branches.
-- **How**: Git history will clearly show each feature as a merge commit from a branch, making it easier to identify and revert, if necessary.
+- Easier to roll back features or changes when they are isolated in their own branches. Git history will clearly show each feature as a merge commit from a branch, making it easier to identify and revert, if necessary.
 
 **5. Access Control and Permissions**
 
-- **Why**: Control over who can commit directly to the main branch, which should represent the stable version of the project.
-- **How**: Setting branch protection rules allows control over who can push to the main or master branches and requires certain checks to pass before merging.
+- Control over who can commit directly to the main branch, which should represent the stable version of the project. Setting branch protection rules allows control over who can push to the main or master branches and requires certain checks to pass before merging.
 
 **6. Prevent Unstable Code**
 
-- **Why**: Direct commits to the main branch can result in an unstable or broken codebase, affecting all team members.
-- **How**: Feature branches must pass continuous integration tests and get approved through code review before merging into the main branch.
+- Direct commits to the main branch can result in an unstable or broken codebase, affecting all team members. Feature branches must pass continuous integration tests and get approved through code review before merging into the main branch.
 
 **7. Documentation and Understanding**
 
-- **Why**: Pull requests provide a forum for discussing the proposed changes, adding to the project's documentation and understanding.
-- **How**: The discussion on a pull request can be referred to in the future for context, serving as valuable project documentation.
+- Pull requests provide a forum for discussing the proposed changes, adding to the project's documentation and understanding. The discussion on a pull request can be referred to in the future for context, serving as valuable project documentation.
 
 For these reasons, the best practice is to clone the repository, create a new branch for your feature or fix, commit your changes to that branch, and then open a pull request for review. After approval, the changes can then be merged into the main or master branch.
