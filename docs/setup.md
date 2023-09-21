@@ -3,9 +3,9 @@
 Create a free GitHub account at [github.com](https://github.com/), choosing a unique username and providing your email. Opt for the free plan for unlimited public repositories (and private repositories too). Click the top-right profile picture to personalize your profile.
 
 To join the SWAT-Model Research Group on GitHub, reach out to:
-**Jaclyn**: [Profile](#)
-, **Celray James**: [Profile](https://github.com/celray)
-, **Christoph**: [Profile](#)
+**Celray James**: [Profile](https://github.com/celray)
+, **Jaclyn**: [Profile](https://github.com/jaclynt)
+, **Christoph**: [Profile](https://github.com/chrisschuerz)
 
 For a primer on GitHub, see the ['GitHub Hello World Guide'](https://guides.github.com/activities/hello-world/).
 
