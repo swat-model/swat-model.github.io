@@ -5,7 +5,7 @@ icon: material/emoticon-happy
 # Welcome to SWAT+ Github Documentation
 
 **IMPORTANT**:
-If you are looking for documentation on the SWAT+ model, please visit [https://swatplus.gitbook.io/docs/user/io](https://swatplus.gitbook.io/docs/user/io). This documentation is for users of the repositories in the SWAT-Research Group
+If you are looking for documentation on the SWAT+ model, please visit [https://swatplus.gitbook.io/io-docs/](https://swatplus.gitbook.io/io-docs/). This documentation is for users of the repositories in the SWAT-Research Group
 
 ## About our GitHub Account
 
