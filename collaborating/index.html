@@ -1,0 +1,726 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../setup/">
+      
+      
+        <link rel="next" href="../managing/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.1">
+    
+    
+      
+        <title>Collaborating - SWAT+ Github Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.72749a73.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#collaborating-within-the-swat-github-organization" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="SWAT+ Github Documentation" class="md-header__button md-logo" aria-label="SWAT+ Github Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SWAT+ Github Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Collaborating
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../setup/" class="md-tabs__link">
+        
+  
+    
+  
+  Setting Up
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Collaborating
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../managing/" class="md-tabs__link">
+        
+  
+    
+  
+  Managing a Repo
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SWAT+ Github Documentation" class="md-nav__button md-logo" aria-label="SWAT+ Github Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    SWAT+ Github Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Collaborating
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Collaborating
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-github-desktop" class="md-nav__link">
+    Using GitHub Desktop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-vs-code" class="md-nav__link">
+    Using VS Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-command-line" class="md-nav__link">
+    Using Command Line
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-not-commit-directly-to-the-main-branch" class="md-nav__link">
+    Why Not Commit Directly to the Main Branch?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Managing a Repo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="collaborating-within-the-swat-github-organization">Collaborating Within the SWAT-Github Organization</h1>
+<hr />
+<p><strong>Prerequisites</strong> : </p>
+<ul>
+<li>Make sure you're a member of the GitHub organization.</li>
+<li>Install Git and configure it on your local machine please refer to <a href="/setup/">This Page</a>.</li>
+</ul>
+<hr />
+<h2 id="using-github-desktop">Using GitHub Desktop</h2>
+<hr />
+<p><strong>Pre-setup</strong></p>
+<ul>
+<li>Make sure you have <a href="https://desktop.github.com/">GitHub Desktop</a> installed.</li>
+<li>Log in to GitHub Desktop with your GitHub account that is part of the organization.</li>
+</ul>
+<p><strong>Clone the Repository</strong></p>
+<ol>
+<li>Open GitHub Desktop.</li>
+<li>Go to <code>File</code> &gt; <code>Clone Repository</code>.</li>
+<li>Choose the tab for your organization and select the repository to clone.</li>
+<li>Click <code>Clone</code> and choose where you want to save the repository on your local machine.</li>
+</ol>
+<p><strong>Create a New Branch</strong></p>
+<ol>
+<li>In GitHub Desktop, ensure you are in the repository you just cloned.</li>
+<li>Click on the <code>Current Branch</code> dropdown in the top bar.</li>
+<li>Choose <code>New Branch</code> and give it a descriptive name.</li>
+<li>Click <code>Create Branch</code>.</li>
+</ol>
+<p><strong>Make Changes</strong></p>
+<ol>
+<li>Open the project files in a text editor or Integrated Development Environment (IDE) - Okay, okay fine... Visual Studio Code! If you do not use it, Try today! Don't delay!</li>
+<li>Make your desired changes and save them.</li>
+</ol>
+<p><strong>Stage and Commit Changes</strong></p>
+<ol>
+<li>Return to GitHub Desktop.</li>
+<li>You will see a list of changed files. You can select the files you want to include in your commit.</li>
+<li>In the bottom-left corner, write a commit message describing your changes.</li>
+<li>Click <code>Commit to [Your Branch Name]</code>.</li>
+</ol>
+<p><strong>Push to New Branch</strong></p>
+<ol>
+<li>Click <code>Publish branch</code> or <code>Push origin</code> to upload your commits to GitHub.</li>
+</ol>
+<p><strong>Create a Pull Request (PR)</strong></p>
+<ol>
+<li>Click on <code>Create Pull Request</code> within GitHub Desktop after pushing your changes.</li>
+<li>This will open a web browser where you can fill in the details of your Pull Request. Click <code>Create Pull Request</code> when ready.</li>
+</ol>
+<p><strong>Review and Address Comments</strong></p>
+<ol>
+<li>Team members can now review your PR and leave comments on GitHub.</li>
+<li>To make further changes, return to your text editor or IDE and repeat the process from the "Make Changes" step.</li>
+<li>Stage, commit, and push these additional changes to update the PR.</li>
+</ol>
+<p><strong>Merging the PR</strong></p>
+<ol>
+<li>Once the PR has been approved, someone with the appropriate permissions can merge it on GitHub.</li>
+<li>After the merge, you'll see an option to delete the remote branch.</li>
+</ol>
+<p><strong>Pull Latest Changes for New Work</strong></p>
+<ol>
+<li>Go back to GitHub Desktop.</li>
+<li>Click on the <code>Current Branch</code> dropdown and switch to the <code>main</code> or <code>master</code> branch.</li>
+<li>Click <code>Fetch origin</code> to pull the latest changes.</li>
+<li>If there are new updates, click <code>Pull origin</code> to update your local branch.</li>
+</ol>
+<hr />
+<h2 id="using-vs-code">Using VS Code</h2>
+<p><strong>Pre-setup</strong></p>
+<ul>
+<li>Make sure you have <a href="https://code.visualstudio.com/">VS Code</a> installed.</li>
+<li>Install the <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub Pull Requests and Issues</a> extension from the VS Code marketplace.</li>
+</ul>
+<p><strong>Clone the Repository</strong></p>
+<ol>
+<li>Open VS Code.</li>
+<li>Press <code>Ctrl+Shift+P</code> (or <code>Cmd+Shift+P</code> on Mac) to open the command palette.</li>
+<li>Type and select <code>Git: Clone</code>, then paste the organization's repository URL.</li>
+<li>Choose a local directory to clone the repository into.</li>
+</ol>
+<p><strong>Create a New Branch</strong></p>
+<ol>
+<li>In the lower-left corner of VS Code, click on the branch icon.</li>
+<li>Select <code>Create New Branch</code>.</li>
+<li>Give your new branch a descriptive name.</li>
+</ol>
+<p><strong>Make Changes</strong></p>
+<ol>
+<li>Use VS Code to navigate through the project files.</li>
+<li>Make your changes using VS Code's text editor.</li>
+<li>Save your work (<code>Ctrl+S</code> or <code>Cmd+S</code>).</li>
+</ol>
+<p><strong>Stage and Commit Changes</strong></p>
+<ol>
+<li>Click on the source control icon in the sidebar (it looks like a branching fork).</li>
+<li>You'll see a list of changed files. Stage them by clicking on the <code>+</code> next to each file.</li>
+<li>In the text box at the top, enter a commit message describing your changes.</li>
+<li>Press the checkmark at the top to commit your changes.</li>
+</ol>
+<p><strong>Push to New Branch</strong></p>
+<ol>
+<li>Open the terminal in VS Code (<code>Ctrl+\`` or</code>Cmd+``).</li>
+<li>Run <code>git push origin [Your Branch Name]</code>.</li>
+</ol>
+<p><strong>Create a Pull Request (PR)</strong></p>
+<ol>
+<li>Go to the GitHub page of your organization's repository.</li>
+<li>You'll likely see a prompt to create a new Pull Request; if so, click it.</li>
+<li>Fill in the PR title and description, then click "Create Pull Request".</li>
+</ol>
+<p><strong>Review and Address Comments</strong></p>
+<ol>
+<li>Team members can now review your PR and leave comments on GitHub.</li>
+<li>Make any necessary changes in VS Code.</li>
+<li>Stage, commit, and push these changes to the same branch to update the PR.</li>
+</ol>
+<p><strong>Merging the PR</strong></p>
+<ol>
+<li>Once the PR is reviewed and approved, someone with the correct permissions can merge it on GitHub.</li>
+<li>Optionally, you can delete the feature branch from GitHub once it has been merged.</li>
+</ol>
+<p><strong>Pull Latest Changes for New Work</strong></p>
+<ol>
+<li>In VS Code, switch back to the <code>main</code> branch by clicking on the branch icon in the lower-left corner.</li>
+<li>Open the terminal and run <code>git pull origin main</code>.</li>
+</ol>
+<hr />
+<h2 id="using-command-line">Using Command Line</h2>
+<p>If you feel like being a nerd (we know you do), then this is for you.</p>
+<p><strong>1. Clone the Repository</strong></p>
+<ul>
+<li><strong>Why</strong>: To get a local copy of the code on your machine.</li>
+<li><strong>How</strong>: Open your terminal (Command Prompt, Terminal, Git Bash, etc.) and navigate to the directory where you'd like to place the project.</li>
+</ul>
+<p><code>bash
+  git clone https://github.com/swat-model/repository-name.git</code></p>
+<p><strong>2. Navigate to the Cloned Directory</strong></p>
+<ul>
+<li><strong>Why</strong>: To perform all Git operations inside this directory.</li>
+<li><strong>How</strong>: Use the <code>cd</code> command in your terminal.</li>
+</ul>
+<p><code>bash
+  cd repository-name</code></p>
+<p><strong>3. Create a New Branch</strong></p>
+<ul>
+<li><strong>Why</strong>: To isolate your changes and make collaboration easier.</li>
+<li><strong>How</strong>: Create and switch to a new branch in your terminal.</li>
+</ul>
+<p><code>bash
+  git checkout -b feature-branch-name</code></p>
+<p><strong>4. Make Changes</strong></p>
+<ul>
+<li><strong>Why</strong>: To implement new features or fix bugs.</li>
+<li><strong>How</strong>: Open the project in your preferred text editor or IDE and make your changes.</li>
+</ul>
+<p><strong>5. Stage Changes</strong></p>
+<ul>
+<li><strong>Why</strong>: To prepare your changes for a commit.</li>
+<li><strong>How</strong>: Stage all changed files using the <code>git add</code> command.</li>
+</ul>
+<p><code>bash
+  git add .</code></p>
+<p><strong>Note</strong>: Use <code>git add file-name</code> to stage individual files.</p>
+<p><strong>6. Commit Changes</strong></p>
+<ul>
+<li><strong>Why</strong>: To save your staged changes along with a descriptive message.</li>
+<li><strong>How</strong>: Commit your changes with a message describing what you've done.</li>
+</ul>
+<p><code>bash
+  git commit -m "Implemented feature X"</code></p>
+<p><strong>7. Push to the Organization Repository</strong></p>
+<ul>
+<li><strong>Why</strong>: To upload your local changes to the remote repository.</li>
+<li><strong>How</strong>: Push your branch to the remote repository.</li>
+</ul>
+<p><code>bash
+  git push origin feature-branch-name</code></p>
+<p><strong>8. Create a Pull Request</strong></p>
+<ul>
+<li><strong>Why</strong>: To propose that your changes be merged into the main codebase.</li>
+<li><strong>How</strong>:</li>
+<li>Go to the <a href="https://github.com/orgs/swat-model/repositories">GitHub page of the swat-model organization's repository</a>.</li>
+<li>Click on "Pull Requests" then "New Pull Request".</li>
+<li>Select your branch from the "compare" dropdown.</li>
+<li>Add a title and description to your pull request.</li>
+<li>Click "Create Pull Request".</li>
+</ul>
+<p><strong>9. Review and Address Feedback</strong></p>
+<ul>
+<li><strong>Why</strong>: To ensure code quality and functionality.</li>
+<li><strong>How</strong>:</li>
+<li>Team members review the pull request and provide feedback.</li>
+<li>If changes are required, repeat steps 4-7.</li>
+</ul>
+<p><strong>10. Merge the Pull Request</strong></p>
+<ul>
+<li><strong>Why</strong>: To include your changes in the project's main codebase.</li>
+<li><strong>How</strong>: Once your pull request has been reviewed and approved, anyone with merge permissions can merge it.</li>
+</ul>
+<p><code>bash
+  Click on "Merge Pull Request" and then "Confirm Merge".</code></p>
+<p><strong>11. Sync Your Local Main Branch</strong></p>
+<ul>
+<li><strong>Why</strong>: To keep your local repository updated.</li>
+<li><strong>How</strong>: Pull the latest changes from the organization's repository.</li>
+</ul>
+<p><code>bash
+  git checkout main
+  git pull origin main</code></p>
+<hr />
+<h2 id="why-not-commit-directly-to-the-main-branch">Why Not Commit Directly to the Main Branch?</h2>
+<p>While it's technically possible to clone a repository and commit directly to the main branch (if you have the necessary permissions), this approach is generally discouraged for the following reasons:</p>
+<p><strong>1. Code Quality and Review</strong></p>
+<ul>
+<li>Ensuring high code quality, adherence to coding standards, and catching potential bugs or security vulnerabilities. Working on a feature branch and submitting a pull request provides an opportunity for team members to review and comment on your code.</li>
+</ul>
+<p><strong>2. Isolation of Features or Bugs</strong></p>
+<ul>
+<li>Isolating the development work for specific features or bug fixes. If a feature branch introduces bugs, it won't affect the main codebase, allowing developers time to fix issues before merging.</li>
+</ul>
+<p><strong>3. Concurrent Development</strong></p>
+<ul>
+<li>Multiple team members can work on different features or bug fixes simultaneously without interference. Each developer works in their own branch, which can later be merged into the main branch after review.</li>
+</ul>
+<p><strong>4. Rollback and History Clarity</strong></p>
+<ul>
+<li>Easier to roll back features or changes when they are isolated in their own branches. Git history will clearly show each feature as a merge commit from a branch, making it easier to identify and revert, if necessary.</li>
+</ul>
+<p><strong>5. Access Control and Permissions</strong></p>
+<ul>
+<li>Control over who can commit directly to the main branch, which should represent the stable version of the project. Setting branch protection rules allows control over who can push to the main or master branches and requires certain checks to pass before merging.</li>
+</ul>
+<p><strong>6. Prevent Unstable Code</strong></p>
+<ul>
+<li>Direct commits to the main branch can result in an unstable or broken codebase, affecting all team members. Feature branches must pass continuous integration tests and get approved through code review before merging into the main branch.</li>
+</ul>
+<p><strong>7. Documentation and Understanding</strong></p>
+<ul>
+<li>Pull requests provide a forum for discussing the proposed changes, adding to the project's documentation and understanding. The discussion on a pull request can be referred to in the future for context, serving as valuable project documentation.</li>
+</ul>
+<p>For these reasons, the best practice is to clone the repository, create a new branch for your feature or fix, commit your changes to that branch, and then open a pull request for review. After approval, the changes can then be merged into the main or master branch.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
+      
+    
+  </body>
+</html>
